@@ -1,0 +1,241 @@
+@font-face {
+  font-family: 'DM Serif Text';
+  src: url('fonts/DMSerifText-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'DM Serif Text', serif;
+  background: black;
+  margin: 0;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  color: white;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: white;
+}
+
+#buttonContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: 'DM Serif Text', serif;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid white;
+  background-color: black;
+  color: white;
+  width: 100%;
+  max-width: 100%;
+}
+
+#downloadBtn:hover,
+#clearBtn:hover,
+#trustBtn:hover {
+  color: black;
+  background-color: white;
+}
+
+#untrustBtn {
+  background-color: white;
+  color: black;
+}
+
+#untrustBtn:hover {
+  color: white;
+  background-color: black;
+}
+
+body.only-icons .label {
+  display: none;
+}
+
+body.only-icons #buttonContainer {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+body.only-icons #buttonContainer button {
+  width: 48px;
+  height: 48px;
+  padding: 6px;
+  justify-content: center;
+  border-radius: 12px;
+  margin-top: 0;
+}
+
+#toggleWrapper {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+#toggleLabelsBtn {
+  padding: 6px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#toggleLabelsBtn:hover {
+  background-color: transparent;
+}
+
+#historyBtn {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#historyBtn:hover {
+  font-size: large;
+  text-decoration:wavy;
+}
+
+/* Скрыто по умолчанию */
+#historyList {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 2s ease, transform 0.4s ease;
+  max-height: 0;
+  overflow: hidden;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+}
+
+#historyList.visible {
+  opacity: 1;
+  transform: translateY(0);
+  max-height: 500px; /* или сколько тебе нужно */
+  margin-top: 10px;
+}
+
+@keyframes fadeInLinks {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#arrowIcon {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  margin-left: 6px;
+}
+
+#arrowIcon.rotated {
+  transform: rotate(90deg);
+}
+
+#trustedList {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  max-height: 0;
+  overflow: hidden;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+}
+
+#trustedList.visible {
+  opacity: 1;
+  transform: translateY(0);
+  max-height: 500px;
+  margin-top: 10px;
+}
+
+#trustedArrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  margin-left: 6px;
+}
+
+#trustedArrow.rotated {
+  transform: rotate(90deg);
+}
+
+#trustedBtn {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#trustedBtn:hover {
+   font-size: large;
+  text-decoration:wavy;
+}
+
+#trustedArrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  margin-left: 6px;
+}
+
+#trustedArrow.rotated {
+  transform: rotate(90deg);
+}
+
+#trustedList {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  max-height: 0;
+  overflow: hidden;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+}
+
+#trustedList.visible {
+  opacity: 1;
+  transform: translateY(0);
+  max-height: 500px;
+  margin-top: 10px;
+}

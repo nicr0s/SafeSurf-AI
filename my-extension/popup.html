@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Phishing Checker</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <h2>SafeSurf AI</h2>
+
+  <div id="buttonContainer">
+    <button id="downloadBtn">
+      <img src="download.svg" alt="download" class="icon">
+      <span class="label">Download CSV</span>
+    </button>
+
+    <button id="clearBtn">
+      <img src="delete.svg" alt="clear" class="icon">
+      <span class="label">Clear Base</span>
+    </button>
+
+    <button id="trustBtn">
+      <img src="trust.svg" alt="trust" class="icon">
+      <span class="label">Trust this site</span>
+    </button>
+
+    <button id="untrustBtn" style="display: none;">
+      <img src="untrust.svg" alt="untrust" class="icon">
+      <span class="label">Delete from trusted sites</span>
+    </button>
+  </div>
+
+  <div id="toggleWrapper">
+    <button id="toggleLabelsBtn">
+      <img src="hide.svg" alt="toggle" class="icon" id="toggleIcon">
+    </button>
+  </div>
+
+  <div id="trustedToggle">
+  <button id="trustedBtn">
+    Trusted Sites <span id="trustedArrow">⯈</span>
+  </button>
+</div>
+<ul id="trustedList"></ul>
+
+  <div id="historyToggle">
+  <button id="historyBtn">
+  History <span id="arrowIcon">⯈</span>
+</button>
+
+</div>
+<ul id="historyList"></ul>
+
+  <script src="popup.js"></script>
+</body>
+</html>
