@@ -1,0 +1,23 @@
+name: Feature request
+description: Suggest an improvement to SafeSurf AI.
+title: "[Feature] "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: Explain the user need or research question.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Describe the intended behavior and how it could be evaluated.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives or related roadmap items
+      description: Include relevant context, if available.

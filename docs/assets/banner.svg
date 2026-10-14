@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400" role="img" aria-labelledby="title desc">
+  <title id="title">SafeSurf AI</title>
+  <desc id="desc">Local machine learning for phishing URL detection. A diploma research prototype, Astana IT University, 2025.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0d1828"/><stop offset="1" stop-color="#081018"/></linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#6ce5cf"/><stop offset="1" stop-color="#4ba1d5"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#194d55" stop-opacity=".6"/><stop offset="1" stop-color="#194d55" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#cce7f4" stroke-opacity=".035"/></pattern>
+  </defs>
+  <rect width="1200" height="400" rx="22" fill="url(#bg)"/>
+  <rect width="1200" height="400" rx="22" fill="url(#grid)"/>
+  <ellipse cx="975" cy="185" rx="265" ry="250" fill="url(#glow)"/>
+  <g font-family="Segoe UI,Arial,sans-serif">
+    <rect x="58" y="49" width="8" height="8" rx="4" fill="#6ce5cf"/>
+    <text x="79" y="60" fill="#a1b7c8" font-size="13" letter-spacing="2.8">CYBERSECURITY / MACHINE LEARNING</text>
+    <text x="54" y="165" fill="#f4f8fc" font-size="83" font-weight="700" letter-spacing="-3">SafeSurf <tspan fill="#6ce5cf">AI</tspan></text>
+    <text x="58" y="216" fill="#d2dfe9" font-size="24">Local intelligence for phishing URL detection.</text>
+    <text x="58" y="252" fill="#8da4b7" font-size="16">Browser extension + a three-model ensemble.</text>
+    <g font-size="13" fill="#cce3e9">
+      <rect x="58" y="288" width="145" height="33" rx="16" fill="#142935" stroke="#29454f"/>
+      <text x="130.5" y="310" text-anchor="middle">LOCAL INFERENCE</text>
+      <rect x="214" y="288" width="137" height="33" rx="16" fill="#142935" stroke="#29454f"/>
+      <text x="282.5" y="310" text-anchor="middle">521 FEATURES</text>
+      <rect x="362" y="288" width="140" height="33" rx="16" fill="#142935" stroke="#29454f"/>
+      <text x="432" y="310" text-anchor="middle">RESEARCH BUILD</text>
+    </g>
+    <text x="58" y="364" fill="#70889c" font-size="12" letter-spacing="1">DIPLOMA PROJECT · ASTANA IT UNIVERSITY · 2025</text>
+  </g>
+  <g transform="translate(856 68)">
+    <circle cx="124" cy="121" r="115" fill="none" stroke="#426d79" stroke-opacity=".4" stroke-dasharray="4 9"/>
+    <circle cx="124" cy="121" r="89" fill="none" stroke="#426d79" stroke-opacity=".22"/>
+    <path d="M124 20 203 51V115C203 173 167 210 124 232 81 210 45 173 45 115V51Z" fill="#102832" stroke="url(#accent)" stroke-width="2.5"/>
+    <path d="M124 40 185 64V115C185 159 158 190 124 210 90 190 63 159 63 115V64Z" fill="none" stroke="#375d68"/>
+    <g stroke="url(#accent)" stroke-width="3" fill="#142f38">
+      <circle cx="99" cy="98" r="7"/><circle cx="150" cy="98" r="7"/><circle cx="124" cy="149" r="7"/>
+      <path d="M106 98H143M102 104 120 142M147 104 128 142" fill="none"/>
+    </g>
+    <rect x="24" y="249" width="200" height="37" rx="8" fill="#122733" stroke="#325763"/>
+    <text x="124" y="273" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#a5dacf" text-anchor="middle" letter-spacing="1.6">RF + XGBOOST + LR</text>
+  </g>
+</svg>

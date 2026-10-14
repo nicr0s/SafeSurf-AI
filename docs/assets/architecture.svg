@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="250" viewBox="0 0 1200 250" role="img" aria-labelledby="title desc">
+  <title id="title">SafeSurf AI inference pipeline</title>
+  <desc id="desc">Browser URL, local Flask API, 521 features, a soft-voting ensemble, and a page notification. Trusted domains bypass inference.</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="m0 0 10 5-10 5Z" fill="#6ce5cf"/></marker></defs>
+  <rect width="1200" height="250" rx="16" fill="#0d1828"/>
+  <g font-family="Segoe UI,Arial,sans-serif">
+    <text x="30" y="35" fill="#8da4b7" font-size="12" letter-spacing="2">FROM URL TO VERDICT</text>
+    <g fill="#142635" stroke="#30485a">
+      <rect x="30" y="64" width="196" height="110" rx="12"/><rect x="266" y="64" width="196" height="110" rx="12"/>
+      <rect x="502" y="64" width="196" height="110" rx="12"/><rect x="738" y="64" width="196" height="110" rx="12"/><rect x="974" y="64" width="196" height="110" rx="12"/>
+    </g>
+    <g stroke="#6ce5cf" stroke-width="2" marker-end="url(#arrow)"><path d="M235 119H255"/><path d="M471 119H491"/><path d="M707 119H727"/><path d="M943 119H963"/></g>
+    <g fill="#6ce5cf" font-size="12" letter-spacing="1.5"><text x="48" y="88">01 / BROWSER</text><text x="284" y="88">02 / LOCAL API</text><text x="520" y="88">03 / FEATURES</text><text x="756" y="88">04 / ENSEMBLE</text><text x="992" y="88">05 / FEEDBACK</text></g>
+    <g fill="#f0f6fb" font-size="21" font-weight="600"><text x="48" y="123">Visited URL</text><text x="284" y="123">Flask service</text><text x="520" y="123">521 inputs</text><text x="756" y="123">Soft voting</text><text x="992" y="123">Page notice</text></g>
+    <g fill="#a0b5c7" font-size="13"><text x="48" y="149">Navigation events</text><text x="284" y="149">POST /predict · :5001</text><text x="520" y="149">500 TF-IDF + 21 numeric</text><text x="756" y="149">RF + XGBoost + LR</text><text x="992" y="149">Verdict + local history</text></g>
+    <text x="30" y="214" fill="#96aebe" font-size="14">Trusted domains bypass inference. Classification requests go to the local API.</text>
+  </g>
+</svg>
